@@ -47,3 +47,78 @@
     opacity: 1;
     z-index: 1;
 }
+
+
+
+
+
+
+.dropdown-container-2 {
+  position: relative;
+}
+
+.dropdown-btn {
+    border: 1px solid #1d1d1f;
+    border-radius: 5px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin-right: 10px;
+    display: flex;
+    background: #f9f5f5;
+    background-size: contain;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-content {
+    display: none;
+    padding: 4px 0px;
+    box-shadow: 0 8px 40px 0 rgba(7,12,17,.4);
+    position: absolute;
+    background-color: #faf5f5;
+    width: 200px;
+    border-radius: 4px;
+    top: 42px;
+    left: 0px;
+    z-index: 111;
+    transition: opacity 0.3s;
+  }
+  
+  .dropdown-content.show {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .dropdown-content ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-content ul li {
+    padding: 10px;
+    cursor: pointer;
+    color: #1f2024;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .dropdown-content ul li:hover {
+    background: #4a4c50 !important;
+    color: #faf5f5;
+  }
+  
+  .dropdown-content ul li i {
+    margin-right: 4px;
+  }
+  
+  .dropdown-btn:hover,
+  .deposit-btn:hover {
+    background-color: #eae9e9;
+  }
+  
+  body {
+    display: flex;
+  }
